@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".ui.fragments.AboutUsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp">
+
+        <ImageView
+            android:id="@+id/featureImage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/testing"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/featureImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/about_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_us"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:lineHeight="23dp"
+                android:justificationMode="inter_word"
+                />
+
+            <TextView
+                android:id="@+id/mission_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Mission"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textFontWeight="700"
+                android:lineHeight="23dp"
+                android:justificationMode="inter_word"
+                />
+
+            <TextView
+                android:id="@+id/mission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_mission"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:lineHeight="23dp"
+                android:justificationMode="inter_word"
+                />
+
+
+            <TextView
+                android:id="@+id/vision_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Vision"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textFontWeight="700"
+                android:lineHeight="23dp"
+                android:justificationMode="inter_word"
+                />
+
+            <TextView
+                android:id="@+id/vision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_vision"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:lineHeight="23dp"
+                android:justificationMode="inter_word"
+                />
+
+
+            <TextView
+                android:id="@+id/our_team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Team"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textFontWeight="700"
+                android:lineHeight="23dp"
+                android:justificationMode="inter_word"
+                />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="9dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:weightSum="10">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="4"
+                        android:src="@drawable/hamza"
+                        android:layout_gravity="center_vertical"
+                        app:civ_border_width="2dp"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"
+                        app:civ_border_color="#ffffff"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="6"
+                        >
+
+                        <TextView
+                            android:id="@+id/manager_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hamza"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="2dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textFontWeight="700"
+                            />
+
+                        <TextView
+                            android:id="@+id/position"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Project Developer"
+                            android:layout_marginBottom="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textFontWeight="700"
+                            />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="9dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:weightSum="10">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_img"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="4"
+                        android:src="@drawable/zeeshan"
+                        android:layout_gravity="center_vertical"
+                        app:civ_border_width="2dp"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"
+                        app:civ_border_color="#ffffff"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="6"
+                        >
+
+                        <TextView
+                            android:id="@+id/ceo_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Zeeshan"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="2dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textFontWeight="700"
+                            />
+
+                        <TextView
+                            android:id="@+id/position_ceo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CEO"
+                            android:layout_marginBottom="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textFontWeight="700"
+                            />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="9dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:weightSum="10">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_i"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="4"
+                        android:src="@drawable/irfan"
+                        android:layout_gravity="center_vertical"
+                        app:civ_border_width="2dp"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"
+                        app:civ_border_color="#ffffff"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="6"
+                        >
+
+                        <TextView
+                            android:id="@+id/pm_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Irfan"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="2dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textFontWeight="700"
+                            />
+
+                        <TextView
+                            android:id="@+id/position_m"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Project Manager"
+                            android:layout_marginBottom="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textFontWeight="700"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>

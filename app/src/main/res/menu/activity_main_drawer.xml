@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_baseline_chat_24"
+            android:title="@string/menu_chat" />
+        <item
+            android:id="@+id/nav_services"
+            android:icon="@drawable/ic_baseline_checklist_24"
+            android:title="@string/menu_services" />
+        <item
+            android:id="@+id/nav_offers"
+            android:icon="@drawable/ic_baseline_local_offer_24"
+            android:title="@string/menu_offers" />
+        <item
+            android:id="@+id/nav_apply"
+            android:icon="@drawable/ic_baseline_group_add_24"
+            android:title="@string/menu_apply" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="@string/menu_about" />
+        <item
+            android:id="@+id/nav_call"
+            android:icon="@drawable/ic_baseline_call_24"
+            android:title="@string/menu_call" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/ic_baseline_privacy_tip_24"
+            android:title="@string/menu_privacy" />
+    </group>
+</menu>

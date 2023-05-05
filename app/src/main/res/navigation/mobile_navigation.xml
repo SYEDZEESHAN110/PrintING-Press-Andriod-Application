@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.hamza.printingpress.ui.fragments.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.hamza.printingpress.ui.fragments.ChatFragment"
+        android:label="@string/menu_chat"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/nav_services"
+        android:name="com.hamza.printingpress.ui.fragments.ServicesFragment"
+        android:label="@string/menu_services"
+        tools:layout="@layout/fragment_services" />
+    <fragment
+        android:id="@+id/nav_offers"
+        android:name="com.hamza.printingpress.ui.fragments.OffersFragment"
+        android:label="@string/menu_offers"
+        tools:layout="@layout/fragment_offers" />
+    <fragment
+        android:id="@+id/nav_apply"
+        android:name="com.hamza.printingpress.ui.fragments.ApplyForAdminFragment"
+        android:label="@string/menu_apply"
+        tools:layout="@layout/fragment_apply_for_admin" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.hamza.printingpress.ui.fragments.AboutUsFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/nav_call"
+        android:name="com.hamza.printingpress.ui.fragments.CallFragment"
+        android:label="@string/menu_call"
+        tools:layout="@layout/fragment_call" />
+    <fragment
+        android:id="@+id/nav_privacy"
+        android:name="com.hamza.printingpress.ui.fragments.TermsAndPrivacyFragment"
+        android:label="@string/menu_privacy"
+        tools:layout="@layout/fragment_terms_and_privacy" />
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.hamza.printingpress.ui.fragments.CartFragment"
+        android:label="@string/menu_cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.hamza.printingpress.ui.fragments.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/serviceDetailFragment"
+        android:name="com.hamza.printingpress.ui.fragments.ServiceDetailFragment"
+        android:label="@string/menu_category_detail"
+        tools:layout="@layout/fragment_service_detail" />
+
+
+</navigation>

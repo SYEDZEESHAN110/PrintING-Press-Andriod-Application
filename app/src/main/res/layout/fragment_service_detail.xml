@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.ServiceDetailFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:orientation="vertical">
+
+   <TextView
+       android:id="@+id/service_title"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:textSize="30dp"
+       android:textStyle="bold" />
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/size_of_product"
+       style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Size of Product">
+
+      <AutoCompleteTextView
+          android:id="@+id/size_of_product_text_view"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:inputType="none" />
+
+   </com.google.android.material.textfield.TextInputLayout>
+
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Quantity">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/quantityField"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="number" />
+
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/paper_quality"
+       style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+       android:layout_width="match_parent"
+       android:layout_marginTop="10dp"
+       android:layout_height="wrap_content"
+       android:hint="Paper Quality">
+
+      <AutoCompleteTextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="none" />
+
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/color_scheme"
+       style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+       android:layout_width="match_parent"
+       android:layout_marginTop="10dp"
+       android:layout_height="wrap_content"
+       android:hint="Color Scheme">
+
+      <AutoCompleteTextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="none" />
+
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/phoneNumber"
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:prefixText="+92"
+       app:counterEnabled="true"
+       app:counterMaxLength="10"
+       android:hint="Phone Number">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="numberSigned" />
+
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <TextView
+       android:id="@+id/design_file_field"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#e0e0e0"
+       android:clickable="true"
+       android:focusable="true"
+       android:padding="15dp"
+       android:text="Choose File"
+       android:textColor="@android:color/primary_text_light"
+       android:textSize="16sp"
+       android:textStyle="normal"
+       app:drawableRightCompat="@drawable/ic_baseline_arrow_circle_down_24">
+
+   </TextView>
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/shop"
+       style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Choose Shop">
+
+      <AutoCompleteTextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:inputType="none" />
+
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/payment_method"
+       style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Choose Payment Method">
+
+      <AutoCompleteTextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:inputType="none" />
+
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <TextView
+       android:id="@+id/paymentDetailText"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+   <Button
+       android:id="@+id/requestSaveBtn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginTop="20dp"
+       android:text="Save" />
+
+</LinearLayout>
+
+</ScrollView>
